@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Feature</title>
+</head>
+
+<body>
+    <p id="rahul">welcome</p>
+    <h1 class="rommy">hello rommy</h1>
+
+    <script>
+        //   function add() {
+        //      let c = document.getElementById('rahul')
+        //      let b = document.getElementsByClassName('rommy')
+        //     console.log(c)
+        //     console.log(b)
+        // }
+        // add()
+        function add() {
+            let c = document.getElementById('rahul').innerText = 'prakash jangid id a dog';
+            let b = document.getElementsByClassName('rommy').innerHTML = 'rommy is also a dog'
+            console.log(c)
+            console.log(b)
+        }
+        add()
+    </script>
+</body>
+
+</html>

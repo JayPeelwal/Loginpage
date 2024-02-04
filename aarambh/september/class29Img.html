@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changeing into a image</title>
+</head>
+
+<body>
+    <button id="btn"> click to change image</button>
+    <a id="d1" href="">click</a>
+    <img src="media/images.jpg" alt="">
+    <script>
+        function add(name) {
+            let a = document.getElementById('d1').attributes[0].value = 'http:google.co.in'
+            let b = document.getElementById('d1').innerText += 'to open google'
+
+            let c = document.getElementsByTagName('img')[0].style.width = '1000px'
+            let d = document.getElementsByTagName('img')[0].style.border = '10px'
+            console.log(name)
+
+        }
+    </script>
+</body>
+
+</html>

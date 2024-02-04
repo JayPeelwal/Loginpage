@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    div {
+        margin: 15px;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <button onclick="handlecolour()"> click to change color of the box</button>
+    <div id="d1" style="background-color:green"> div1 </div>
+    <div id="d2" style="background-color:green"> div2 </div>
+
+
+    <script>
+        let a = document.getElementById('d1').style.backgroundColor
+        let b = document.getElementById('d2').style.backgroundColor
+
+        function handlecolour() {
+            if (a == 'green') {
+                a = document.getElementById('d1').style.backgroundColor = 'orange'
+            } else if (a == 'orange' && b == 'green') {
+                a = document.getElementById('d1').style.backgroundColor = 'red'
+                b = document.getElementById('d2').style.backgroundColor = 'orange'
+            } else if (a == 'red' && b == 'orange') {
+                a = document.getElementById('d1').style.backgroundColor = 'green'
+                b = document.getElementById('d2').style.backgroundColor = 'green'
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #d1 {
+        font-size: 25px;
+    }
+    
+    img {
+        width: 350px;
+        margin-bottom: 50px;
+    }
+</style>
+
+<body>
+    <button id="btn"> click to apply js</button>
+    <div>
+        <a href="" id="d1"> click </a>
+        <img src="./media/gold-metal-lord-ganesha-idol-on-decorative-handcrafted-plate-by-ecraftindia-gold-metal-lord-ganesha--fwqa7n.webp" alt="">
+    </div>
+
+
+
+    <script>
+        let btt = document.getElementById('btn').addEventListener('click', () => {
+            add('prakash')
+        })
+
+
+        function add(name) {
+            console.log(name)
+            let a = document.getElementById('d1').attributes[0].value = 'http:google.co.in'
+            let b = document.getElementById('d1').innerText += 'to open google'
+            let e = document.getElementsByTagName('img')[0].attributes[0].value = './media/images.jpg'
+            let c = document.getElementsByTagName('img')[0].style.width = '100px'
+            let d = document.getElementsByTagName('img')[0].style.border = '2px solid red'
+        }
+    </script>
+</body>
+
+</html>

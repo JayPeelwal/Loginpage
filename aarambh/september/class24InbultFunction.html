@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inbultfunction</title>
+</head>
+
+<body>
+    <button onclick="add()">do you want to these number sum</button>
+    <script>
+        // function add() {
+        //   let FirstNumber = prompt('enter first number');
+        //  let SecondNumber = prompt('enter second number');
+        //  let SumNumber = FirstNumber + SecondNumber;
+        //  alert(SumNumber)
+        //  document.write(SumNumber)
+        // }
+        //this is the numric data type we need to assign this prompt 
+        // to a numric data types otherwise it can not sum of two values
+        function add() {
+            let FirstNumber = Number(prompt('enter first number'));
+            let SecondNumber = Number(prompt('enter second number'));
+            let SumNumber = FirstNumber + SecondNumber;
+            alert(SumNumber)
+            document.write(SumNumber)
+        }
+    </script>
+</body>
+
+</html>

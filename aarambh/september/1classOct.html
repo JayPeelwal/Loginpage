@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        margin: 50px;
+        padding: 20px;
+    }
+    
+    input {
+        margin: 20px
+    }
+</style>
+
+<body>
+    <p id="error"></p>
+    <form action="" method="post" onsubmit=" return handlevalidation()">
+        <label for="">Username</label>
+        <input type="text" name="" id="user"><br>
+        <label for="">Password</label>
+        <input type="text" name="" id="p1"><br>
+        <label for="">confirm password</label>
+        <input type="text" name="" id="p2"><br>
+        <button type="submit">submit</button>
+    </form>
+
+    <script>
+        function handlevalidation() {
+            let a = document.getElementById('user').value
+            let b = document.getElementById('p1').value
+            let c = document.getElementById('p2').value
+            if (a == '') {
+                a = document.getElementById('error').innerText = "please enter username"
+                return false
+            }
+            if (a.trim() == '') {
+                a = document.getElementById('error').innerText = "don't use space into this box"
+                return false
+            }
+            if (p1 == '') {
+                b = document.getElementById('error').innerText = "please enter password"
+                return false
+            }
+            if (p1 !== p2) {
+                c = document.getElementById('error').innerText = "password not mattched"
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>

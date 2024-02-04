@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parameters</title>
+</head>
+<style>
+    button {
+        padding: 10px;
+        font-size: 20px;
+        align-items: center;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+</style>
+
+<body>
+    <button>click here to show the values</button>
+    <script>
+        function add(a, b) {
+            let c = a + b;
+            console.log(c)
+        }
+        add(700, 600);
+        add(13, 26)
+
+        function pk() {
+            let name = 'prakash'
+            console.log(name)
+        }
+        pk();
+
+        function global() {
+            let name = 'jangid'
+            return name;
+        }
+        console.log(global(name))
+        let d = global()
+        console.log(d)
+    </script>
+
+
+
+
+</body>
+
+</html>
